@@ -1,0 +1,32 @@
+{
+  "homepage": "https://lcycug.top/pet-finder-app",
+  "name": "pet-finder-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "build": "parcel build ./src/index.html/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -b master -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lcycug/pet-finder-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lcycug/pet-finder-app/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.1",
+    "petfinder-client": "^0.0.3",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.11.0"
+  }
+}
