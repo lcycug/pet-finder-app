@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import petfinderClient from 'petfinder-client';
 
 class Pet extends Component{
   
