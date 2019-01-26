@@ -31,4 +31,4 @@ const e=require("is-node");let t,r=()=>console.warn("WARNING, YOU CALLED JSONP I
 },{"react":"1n8/","petfinder-client":"9HC7","./Pet":"im/z"}],"2u/B":[function(require,module,exports) {
 "use strict";var e=u(require("react")),r=require("react-dom"),t=u(require("./component/App"));function u(e){return e&&e.__esModule?e:{default:e}}(0,r.render)(e.default.createElement(t.default,null),document.getElementById("root"));
 },{"react":"1n8/","react-dom":"NKHc","./component/App":"xuTc"}]},{},["2u/B"], null)
-//# sourceMappingURL=/src.551f0f2e.map
+//# sourceMappingURL=src.551f0f2e.map
