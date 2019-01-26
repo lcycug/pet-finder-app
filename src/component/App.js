@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import pf from 'petfinder-client'
 import Pet from './Pet';
+import AwesomeComponent from './AwesomeComponent';
 
 const petfinder = pf({
   key: "ab0d1ccb1fb1add9508a07aaec64bf0b",
@@ -15,7 +16,8 @@ export default class App extends Component {
     super(props);
 
     this.state = {
-      pets: []
+      pets: [],
+      loading: true
     }
   }
 
@@ -24,15 +26,17 @@ export default class App extends Component {
       .then(data => {
         let pets = data.petfinder.pets && data.petfinder.pets.pet ? 
           [...data.petfinder.pets.pet] : [];
-        this.setState({pets});
+        this.setState({pets, loading: false});
       })
   }
 
   render() {
     return (
       <div className="container">
-        {/* <pre><code>{JSON.stringify(this.state.pets)}</code></pre> */}
-        {this.state.pets.map(pet => <Pet {...pet}/>)}
+        {this.setState.loading === true ? 
+          <AwesomeComponent/> :
+          this.state.pets.map(pet => <Pet {...pet}/>)
+        }
       </div>
     )
   }
