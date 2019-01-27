@@ -5,6 +5,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "format": "prettier --write \"src/**/*.{js,jsx,css,json}\"",
+    "format:check": "prettier --list-different \"src/**/*.{js,jsx,css,json}\"",
+    "lint": "eslint \"src/**/*.{js, jsx}\"",
     "dev": "parcel ./public/index.html",
     "build": "parcel build ./public/index.html --public-url ./",
     "predeploy": "npm run build",
@@ -33,6 +36,10 @@
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "parcel-bundler": "^1.11.0"
+    "eslint": "^5.12.1",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "parcel-bundler": "^1.11.0",
+    "prettier": "^1.16.1"
   }
 }
